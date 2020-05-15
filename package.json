@@ -45,10 +45,12 @@
     "babel-loader": "^8.1.0",
     "css-loader": "^3.4.2",
     "ejs-loader": "^0.3.5",
+    "foundation-sites": "^6.6.3",
     "html-loader": "^1.0.0",
     "html-webpack-plugin": "^4.0.1",
+    "jquery": "^3.5.1",
     "mini-css-extract-plugin": "^0.9.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "path": "^0.12.7",
     "postcss-loader": "^3.0.0",
@@ -65,7 +67,7 @@
     "underscore": "^1.9.2",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {}
 }

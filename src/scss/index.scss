@@ -1,18 +1,8 @@
-@import "./reset";
-@import "./colors";
+@import "./precompiled/settings.scss";
+
+@import "./precompiled/variables.scss";
 
 body {
-    max-width: 1280px;
-    width: 100%;
-    min-height: 100vH;
-    height: 100%;
-    margin: 0 auto;
-    background: $color_primary_dark;
-    color: $color_primary_bright;
-}
-
-html {
-    width: 100vW;
-    min-height: 100vH;
-    background: $color_primary_darkest;
+    color: get-color(primary);
+    background: get-color(secondary);
 }
