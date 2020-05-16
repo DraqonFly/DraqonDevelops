@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PageRouter from "../router/router/PageRouter.jsx";
 
 class App extends Component
 {
@@ -12,7 +13,7 @@ class App extends Component
 
     render() {
         return(
-            <div> Yooo, this is in react </div>
+            <PageRouter />
         );
     }
 }

@@ -1,0 +1,23 @@
+.link {
+    text-decoration: underline;
+    text-decoration-color: get-color(secondary);
+    color: get-color(secondary);
+    transition: .1s;
+    font-size: 21px;
+    line-height: 23px;
+    
+    &:hover {
+        text-decoration-color: get-color(secondary-light);
+        color: get-color(secondary-light);
+    }
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+
+    &:hover {
+        text-decoration: inherit;
+        color: inherit;
+    }
+}
