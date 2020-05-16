@@ -1,8 +1,14 @@
+@import "./precompiled/reset.scss";
 @import "./precompiled/settings.scss";
-
+@import "./precompiled/mixins.scss";
 @import "./precompiled/variables.scss";
 
-body {
+
+@import "./components/Panel.scss";
+@import "./components/Headline.scss";
+@import "./components/Paragraph.scss";
+@import "./components/Link.scss";
+
+* {
     color: get-color(primary);
-    background: get-color(secondary);
 }

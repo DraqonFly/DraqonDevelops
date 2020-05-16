@@ -1,0 +1,9 @@
+@mixin apply-map($selected-attributes) {
+    @each $elem, $attributes in $selected-attributes {
+        #{$elem} {
+            @each $property, $value in $attributes {
+                #{$property}: $value;
+            }
+        }
+    }
+}
