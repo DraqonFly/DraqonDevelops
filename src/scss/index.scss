@@ -2,12 +2,15 @@
 @import "./precompiled/settings.scss";
 @import "./precompiled/mixins.scss";
 @import "./precompiled/variables.scss";
+@import "./precompiled/animations.scss";
 
 
 @import "./components/Panel.scss";
 @import "./components/Headline.scss";
 @import "./components/Paragraph.scss";
 @import "./components/Link.scss";
+@import "./components/List.scss";
+@import "./components/Page.scss";
 
 * {
     color: get-color(primary);

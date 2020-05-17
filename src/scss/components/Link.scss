@@ -4,11 +4,26 @@
     color: get-color(secondary);
     transition: .1s;
     font-size: 21px;
-    line-height: 23px;
+    line-height: 29px;
+    margin: 6px;
     
     &:hover {
         text-decoration-color: get-color(secondary-light);
         color: get-color(secondary-light);
+    }
+
+
+}
+
+.repoLink {
+    margin-top: -20px;
+    margin-left: 45px;
+
+    a {
+        position: absolute;
+        margin-top: -16px;
+        vertical-align: text-top;
+        line-height: 50px;
     }
 }
 

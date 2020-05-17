@@ -11,7 +11,7 @@ class Panel extends Component
 
     render(){
         return(
-            <div className={"panel "+this.props.className}> {this.props.children} 
+            <div className={"panel "+this.props.class}> {this.props.children} 
 
             </div>
         );

@@ -1,0 +1,28 @@
+.list {
+    padding: 12px 0 0 12px;
+    font-size: 22px;
+
+    li {
+        line-height: 28px;
+    }
+
+    .customListPoint {
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: -5px 8px 0 0;
+        -webkit-animation: rotating 2s linear infinite;
+    }
+}
+
+ul {
+    li {
+        list-style: none;
+        display: inline;
+    }
+}
+

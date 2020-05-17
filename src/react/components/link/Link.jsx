@@ -12,7 +12,7 @@ class Link extends Component
 
     render(){
         return(
-            <span className="link"> {this.props.children} </span>
+            <span className={ String(this.props.class) === "undefined"? "link" : "link "+this.props.class}> {this.props.children} </span>
         );
     }
 }
