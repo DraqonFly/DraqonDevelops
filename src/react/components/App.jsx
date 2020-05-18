@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import PageRouter from "../router/router/PageRouter.jsx";
-import Menu from "./molecules/menu/Menu.jsx"; 
+import Menu from "./atoms/menu/Menu.jsx"; 
 
 class App extends Component
 {
