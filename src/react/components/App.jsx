@@ -16,9 +16,21 @@ class App extends Component
         return(
             <div>
                 <Menu horizontal={true} class="mainnav">
-                    <div> General </div>
-                    <div> Developmente </div>
-                    <div> About </div>
+                    <Menu horizontal={false} class="mainnav__inner">
+                        <div className="mainnav__item --caption">General</div>
+                        <div className="mainnav__item --selectable"> GeneralB </div>
+                        <div className="mainnav__item --selectable">GeneralC</div>
+                    </Menu>
+                    <Menu horizontal={false} class="mainnav__inner">
+                        <div className="mainnav__item --caption">Development</div>
+                        <div className="mainnav__item --selectable">DevelopmentB</div>
+                        <div className="mainnav__item --selectable">DevelopmentC</div>
+                        <div className="mainnav__item --selectable">DevelopmentD</div>
+                    </Menu>
+                    <Menu horizontal={false} class="mainnav__inner">
+                        <div className="mainnav__item --caption">About</div>
+                        <div className="mainnav__item --selectable">AboutB</div>
+                    </Menu>                
                 </Menu>
                 <PageRouter />
             </div>
