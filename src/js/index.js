@@ -1,5 +1,7 @@
 import 'foundation-sites/dist/css/foundation.min.css';
 
+require.context('../svg', true, /\.svg$/);
+
 
 import "../scss/index.scss";
 

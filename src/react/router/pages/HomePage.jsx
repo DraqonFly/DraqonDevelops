@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import {Link as ReactLink} from "react-router-dom";
-import Panel from "../../components/panel/Panel.jsx";
-import Headline from "../../components/headline/Headline.jsx";
-import Paragraph from "../../components/paragraph/Paragraph.jsx";
-import Link from "../../components/link/Link.jsx";
+import Panel from "../../components/atoms/panel/Panel.jsx";
+import Headline from "../../components/atoms/headline/Headline.jsx";
+import Paragraph from "../../components/atoms/paragraph/Paragraph.jsx";
+import Link from "../../components/atoms/link/Link.jsx";
 
 class HomePage extends Component
 {

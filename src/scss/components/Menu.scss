@@ -1,0 +1,27 @@
+.menu {
+
+}
+
+.menu.horizontal {
+    display: flex;
+    flex-direction: row;
+    line-height: 40px;
+    font-size: 20px;
+}
+.menu.horizontal > * {
+    margin-right: 20px;
+
+    &:first-of-type {
+        margin-left: 16px;
+    }
+}
+
+.menu.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainnav {
+    background: get-color(primary-dark);
+}
+

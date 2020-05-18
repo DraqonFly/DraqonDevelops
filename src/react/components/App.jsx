@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import PageRouter from "../router/router/PageRouter.jsx";
+import Menu from "./molecules/menu/Menu.jsx"; 
 
 class App extends Component
 {
@@ -13,7 +14,14 @@ class App extends Component
 
     render() {
         return(
-            <PageRouter />
+            <div>
+                <Menu horizontal={true} class="mainnav">
+                    <div> General </div>
+                    <div> Developmente </div>
+                    <div> About </div>
+                </Menu>
+                <PageRouter />
+            </div>
         );
     }
 }

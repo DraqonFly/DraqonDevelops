@@ -11,7 +11,7 @@ class Paragraph extends Component
 
     render(){
         return(
-            <p className="paragraph"> {this.props.children} </p>
+            <p className={String(this.props.class) === "undefined" ? "paragraph" : "paragraph "+this.props.class}> {this.props.children} </p>
         );
     }
 }

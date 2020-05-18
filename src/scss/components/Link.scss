@@ -16,8 +16,7 @@
 }
 
 .repoLink {
-    margin-top: -20px;
-    margin-left: 45px;
+    margin-left: 40px;
 
     a {
         position: absolute;
@@ -30,6 +29,9 @@
 a {
     text-decoration: inherit;
     color: inherit;
+    margin-left: 8px;
+    margin-top: -40px;
+    line-height: 50px;
 
     &:hover {
         text-decoration: inherit;

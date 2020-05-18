@@ -19,8 +19,8 @@ class List extends Component
     render(){
         return(
             this.props.isOrdered == false
-                ? <ul className="list unordered"> {this.applyListDots()}  </ul> 
-                : <ol className="list ordered"> {this.props.children} </ol> 
+                ? <ul className={String(this.props.class) === "undefined" ? "list unordered" : "list unordered "+this.props.class}> {this.applyListDots()}  </ul> 
+                : <ol className={String(this.props.class) === "undefined" ? "list ordered" : "list ordered "+this.props.class}> {this.props.children} </ol> 
         );
     }
 }
