@@ -17,6 +17,7 @@ class PageRouter extends Component
     render(){
         return(
             <HashRouter>
+                {this.props.children}
                 <Switch>
                     <Route exact path="/"> <div className="page"> <HomePage/> </div> </Route>
                     <Route path="/BoilerplateCorner"> <div className="page"> <BoilerplateCorner /> </div> </Route>

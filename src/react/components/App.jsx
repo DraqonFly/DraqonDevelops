@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import { Link as ReactLink } from "react-router-dom";
 import PageRouter from "../router/router/PageRouter.jsx";
 import Menu from "./molecules/menu/Menu.jsx";
 import MenuItem from "./atoms/menuItem/MenuItem.jsx";
 import Switch from ".//atoms/switch/Switch.jsx";
+import Link from ".//atoms/link/Link.jsx";
 
 
 class App extends Component {
@@ -20,21 +22,24 @@ class App extends Component {
                             innerPos: 0,
                             class: "mainnav__item --caption",
                             text: "General",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         },
                         {
                             outerPos: 0,
                             innerPos: 1,
                             class: "mainnav__item --selectable",
                             text: "GeneralB",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         },
                         {
                             outerPos: 0,
                             innerPos: 2,
                             class: "mainnav__item --selectable",
                             text: "GeneralC",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         }
                     ]
                 },
@@ -47,28 +52,32 @@ class App extends Component {
                             innerPos: 0,
                             class: "mainnav__item --caption",
                             text: "Development",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         },
                         {
                             outerPos: 1,
                             innerPos: 1,
                             class: "mainnav__item --selectable",
-                            text: "DevelopmentB",
-                            highlighted: false
+                            text: "Boilerplate Corner",
+                            highlighted: false,
+                            link: "/BoilerplateCorner"
                         },
                         {
                             outerPos: 1,
                             innerPos: 2,
                             class: "mainnav__item --selectable",
-                            text: "DevelopmentC",
-                            highlighted: false
+                            text: "Git Repositories",
+                            highlighted: false,
+                            link: "/GitRepositories"
                         },
                         {
                             outerPos: 1,
                             innerPos: 3,
                             class: "mainnav__item --selectable",
                             text: "DevelopmentD",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         }
                     ]
                 },
@@ -81,14 +90,16 @@ class App extends Component {
                             innerPos: 0,
                             class: "mainnav__item --caption",
                             text: "About",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         },
                         {
                             outerPos: 2,
                             innerPos: 1,
                             class: "mainnav__item --selectable",
                             text: "AboutB",
-                            highlighted: false
+                            highlighted: false,
+                            link: "none"
                         }
                     ]
                 }
@@ -97,39 +108,40 @@ class App extends Component {
     }
 
     updateActiveSection = (sectionID, selectionID) => {
-        console.log("Buttonclick");
         this.state.menus.map((currMenu, outerIndex) => {
             return currMenu.menuItems.map((currItem, innerIndex) => {
-
-                if (sectionID == currItem.outerPos && selectionID == currItem.innerPos && selectionID == 0) {
-                    currItem.highlighted = !currItem.highlighted;
-                    if(selectionID == 0) {
-                        if(currItem.highlighted == true) currItem.class = "mainnav__item --caption --highlighted";    
-                        else currItem.class = "mainnav__item --caption";  
+                if (currItem.innerPos > 0) currItem.class = "mainnav__item --selectable";
+                else currItem.class = "mainnav__item --caption";
+                if(innerIndex == 0 && selectionID == currItem.innerPos && sectionID == currItem.outerPos) {
+                    if(currItem.highlighted == false) {
+                        currItem.highlighted = true;
+                        currItem.class += " --highlighted";
+                    } else {
+                        currItem.highlighted = false;
+                        currItem.class = "mainnav__item --caption";
                     }
-
-                } 
-                else if(currItem.outerPos === sectionID && currMenu.menuItems[0].highlighted) {
-                    currItem.class += " --visible";
-                }
-                else {
-                    currItem.highlighted = false;
-                    if(currItem.innerPos > 0) currItem.class = "mainnav__item --selectable";
-                    else currItem.class = "mainnav__item --caption";
-
-                    
-                }
-                
-                
-                this.setState({map: [...this.state.menus, currItem]})
-
+                } else currItem.highlighted = false;
+                this.setState({ map: [...this.state.menus, currItem] })
             })
+        });
+        this.state.menus.map((currMenu, outerIndex) => {
+            return currMenu.menuItems.map((currItem, innerIndex) => {
+                if(currMenu.menuItems[0].highlighted && currItem.innerPos > 0) currItem.class += " --visible";
+                else if(currItem.innerPos > 0) currItem.class = "mainnav__item --selectable";
+                this.setState({ map: [...this.state.menus, currItem] })
+            })
+        });
+    }
 
-        }, console.log(this.state.menus) );
-
-
-
-
+    resetNav = () => {
+        this.state.menus.map((currMenu, outerIndex) => {
+            return currMenu.menuItems.map((currItem, innerIndex) => {
+                if (currItem.innerPos > 0) currItem.class = "mainnav__item --selectable";
+                else currItem.class = "mainnav__item --caption";
+                currItem.highlighted = false;
+                this.setState({ map: [...this.state.menus, currItem] })
+            })
+        });
     }
 
 
@@ -137,17 +149,24 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Menu horizontal={true} class="mainnav">
-                    {this.state.menus.map((currMenu, outerIndex) => {
-                        return <Menu key={outerIndex} horizontal={currMenu.horizontal} class={currMenu.class}>
-                            {currMenu.menuItems.map((currItem, innerIndex) => {
-                                return <MenuItem outerPos={currItem.outerPos} innerPos={currItem.innerPos} highlighted={currItem.highlighted} key={innerIndex} onClick={() => this.updateActiveSection(currItem.outerPos, currItem.innerPos)} class={currItem.class} > {currItem.text} </MenuItem>
-                            })}
-                        </Menu>
-                    })}
-                    <Switch />
-                </Menu>
-                <PageRouter />
+                <PageRouter>
+                    <Menu horizontal={true} class="mainnav">
+                    <div onClick={this.resetNav} className="mainnav__item --caption --main"> <ReactLink to="/"> Home </ReactLink> </div>
+                        {this.state.menus.map((currMenu, outerIndex) => {
+                            return <Menu key={outerIndex} horizontal={currMenu.horizontal} class={currMenu.class}>
+                                {currMenu.menuItems.map((currItem, innerIndex) => {
+                                    return <MenuItem outerPos={currItem.outerPos} innerPos={currItem.innerPos} highlighted={currItem.highlighted} key={innerIndex} onClick={() => this.updateActiveSection(currItem.outerPos, currItem.innerPos)} class={currItem.class} >
+
+                                        {innerIndex > 0
+                                            ? <span><ReactLink to={currItem.link}> {currItem.text} </ReactLink></span> :
+                                            currItem.text}
+                                    </MenuItem>
+                                })}
+                            </Menu>
+                        })}
+                        <Switch />
+                    </Menu>
+                </PageRouter>
             </div>
         );
     }

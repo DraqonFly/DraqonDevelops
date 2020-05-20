@@ -10,9 +10,36 @@
 
 .--caption {
     font-weight: bolder;
+    margin-top: -3px;
 }
 
 .--visible {
     transition: 0.18s;
     display: block !important;
+}
+
+.--main {
+    position: relative;
+    display: block;
+    width: 20px;
+    margin: -1.5px 33px -1.5px -40px;
+
+    :first-child {
+        width: 90px;
+        height: 42px;
+        margin: 0 40px 0 -36px;
+        transition: 0.18s;
+        color: rgb(39, 133, 255);
+
+        &:hover {
+            color: rgb(65, 163, 255);
+            background: rgb(10, 39, 53);
+        }
+
+
+    }
+
+
+
+
 }
