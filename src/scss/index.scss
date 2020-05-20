@@ -3,6 +3,7 @@
 @import "./precompiled/mixins.scss";
 @import "./precompiled/variables.scss";
 @import "./precompiled/animations.scss";
+@import "./precompiled/selectors.scss";
 
 
 @import "./components/Panel.scss";
@@ -16,4 +17,9 @@
 
 * {
     color: get-color(primary);
+}
+
+body {
+    background: rgb(37, 37, 37);
+    color: rgb(42, 42, 42);
 }

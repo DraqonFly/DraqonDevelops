@@ -1,0 +1,18 @@
+.--highlighted {
+    color: rgb(44, 189, 246);
+    background: rgb(0, 107, 179);
+}
+
+.--selectable {
+    margin-top: 0.5px;
+    margin-left: 0.5px;
+}
+
+.--caption {
+    font-weight: bolder;
+}
+
+.--visible {
+    transition: 0.18s;
+    display: block !important;
+}

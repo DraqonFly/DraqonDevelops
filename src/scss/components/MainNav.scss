@@ -3,8 +3,7 @@
 }
 
 .--selectable {
-    margin-top: 0.5px;
-    margin-left: 0.5px;
+    display: none;
 }
 
 
@@ -13,12 +12,11 @@
     vertical-align: middle;
     
     .--caption {
-        font-weight: bolder;
         transition: 0.18s;
 
         &:hover {
             color: rgb(0, 162, 255);
-            background: rgb(18, 108, 168);
+            background: rgb(35, 112, 163);
         }
     }
 
@@ -33,4 +31,8 @@
             background: rgb(48, 138, 198);
         }
     }
+}
+
+.menuItem {
+    margin: -2px 0;
 }
