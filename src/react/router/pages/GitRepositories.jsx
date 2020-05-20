@@ -28,12 +28,58 @@ class GitRepositories extends Component {
 
                 <Headline size="3" class="listHeadline"> My Git Repositories </Headline>
                 <List isOrdered={false}>
-                    <li> Betting-Office <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/Betting-Office"> visit Betting-Office repository </a> </Link> </li>
-                    <li> Webdev Boilerplates <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/Webdev-Boilerplates"> visit Webdev-Boilerplates repository </a> </Link> </li>
-                    <li> Sudoku <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/Sudoku"> visit Sudoku repository </a> </Link> </li>
-                    <li> Chess <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/Schach"> visit Chess repository </a> </Link> </li>
-                    <li> Senso <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/Senso"> visit Senso repository </a> </Link> </li>
-                    <li> DraqonDevelops.com <br/><Link class="repoLink"> <a href="https://github.com/DraqonFly/DraqonDevelops"> visit this websites repository </a> </Link> </li>
+                    <li> Betting-Office <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank"  href="https://github.com/DraqonFly/Betting-Office"> visit Betting-Office repository </a> </Link> 
+                    <br/><br/></li> 
+ 
+                    
+                    <li> Webdev Boilerplates <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank" href="https://github.com/DraqonFly/Webdev-Boilerplates"> visit Webdev-Boilerplates repository </a> </Link> 
+                    <br/><br/></li> 
+                    
+                    
+                    <li> Sudoku <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank"  href="https://github.com/DraqonFly/Sudoku"> visit Sudoku repository </a> </Link> 
+                    <br/><br/></li> 
+                    
+                    
+                    <li> Chess <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank"  href="https://github.com/DraqonFly/Schach"> visit Chess repository </a> </Link> 
+                    <br/><br/></li> 
+                    
+                    
+                    <li> Senso <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank"  href="https://github.com/DraqonFly/Senso"> visit Senso repository </a> </Link> 
+                    <br/><br/></li> 
+                    
+                    
+                    <li> DraqonDevelops.com <br/>
+                        <Paragraph class="description">
+                            Informational text for this listpoint <br/>
+                            second line for an informational text
+                        </Paragraph>  
+                        <Link class="repoLink"> <a target="blank" href="https://github.com/DraqonFly/DraqonDevelops"> visit this websites repository </a> </Link> 
+                    <br/><br/></li> 
                 </List>
 
             </Panel>
