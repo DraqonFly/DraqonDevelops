@@ -44,7 +44,7 @@ class BoilerplateCorner extends Component {
                     <br/><br/> </li>
                     <li> Express Boilerplate 
                         <Paragraph class="description">
-                            Informational text for this listpoint <br/>
+                            <span> Informational text for this listpoint </span> <br/>
                             second line for an informational text
                         </Paragraph>
                         <Link  class="repoLink"> <a target="blank" href="https://github.com/DraqonFly/Webdev-Boilerplates/tree/Express"> Visit Express Boilerplate</a> </Link>

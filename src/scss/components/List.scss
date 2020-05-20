@@ -12,10 +12,8 @@
         margin-bottom: 50px;
         border: 2px solid rgb(50, 160, 240);
         border-radius: 6px;
-        background-color: rgba(38, 56, 71, 0.769);
-        min-width: 700px;
-        width: 90%;
-        max-width: 1200px;
+        background-color: rgba(6, 51, 65, 0.711);
+        width: 720px;
         height: 214px;
     }
 
@@ -33,3 +31,17 @@ ul {
         display: inline;
     }
 }
+
+.preview {
+    font-size: 20px;
+
+    * {
+        font-size: 17px;
+        line-height: 19px;
+
+        
+
+
+    }
+
+}    
