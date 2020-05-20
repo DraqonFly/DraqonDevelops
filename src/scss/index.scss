@@ -14,12 +14,13 @@
 @import "./components/Page.scss";
 @import "./components/Menu.scss";
 @import "./components/MainNav.scss";
+@import "./components/Slider.scss";
 
 * {
     color: get-color(primary);
 }
 
 body {
-    background: rgb(37, 37, 37);
+    background: rgb(241, 241, 241);
     color: rgb(42, 42, 42);
 }

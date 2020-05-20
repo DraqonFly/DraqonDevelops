@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import PageRouter from "../router/router/PageRouter.jsx";
-import Menu from "./atoms/menu/Menu.jsx";
+import Menu from "./molecules/menu/Menu.jsx";
 import MenuItem from "./atoms/menuItem/MenuItem.jsx";
+import Switch from ".//atoms/switch/Switch.jsx";
+
 
 class App extends Component {
 
@@ -143,6 +145,7 @@ class App extends Component {
                             })}
                         </Menu>
                     })}
+                    <Switch />
                 </Menu>
                 <PageRouter />
             </div>
