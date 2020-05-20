@@ -27,8 +27,9 @@ class GitRepositories extends Component {
                 </Paragraph>
 
                 <Headline size="3" class="listHeadline"> My Git Repositories </Headline>
-                <List isOrdered={false}>
-                    <li> Betting-Office <br/>
+                <List isOrdered={false} listPoints={false}>
+                    <li> Betting-Office
+                        <img class="previewImage" src="/src/assets/images/noPreview.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text
@@ -37,7 +38,8 @@ class GitRepositories extends Component {
                     <br/><br/></li> 
  
                     
-                    <li> Webdev Boilerplates <br/>
+                    <li> Webdev Boilerplates
+                    <img class="previewImage" src="/src/assets/images/noPreview.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text
@@ -46,7 +48,8 @@ class GitRepositories extends Component {
                     <br/><br/></li> 
                     
                     
-                    <li> Sudoku <br/>
+                    <li> Sudoku 
+                        <img class="previewImage" src="/src/assets/images/sudoku.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text
@@ -55,7 +58,8 @@ class GitRepositories extends Component {
                     <br/><br/></li> 
                     
                     
-                    <li> Chess <br/>
+                    <li class="preview"> Chess 
+                        <img class="previewImage" src="/src/assets/images/chess.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text
@@ -64,7 +68,8 @@ class GitRepositories extends Component {
                     <br/><br/></li> 
                     
                     
-                    <li> Senso <br/>
+                    <li> Senso
+                    <img class="previewImage" src="/src/assets/images/noPreview.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text
@@ -73,7 +78,8 @@ class GitRepositories extends Component {
                     <br/><br/></li> 
                     
                     
-                    <li> DraqonDevelops.com <br/>
+                    <li> DraqonDevelops.com 
+                    <img class="previewImage" src="/src/assets/images/noPreview.png" alt="no image"/>
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
                             second line for an informational text

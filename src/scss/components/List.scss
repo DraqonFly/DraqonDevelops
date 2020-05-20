@@ -7,14 +7,22 @@
     }
 
     .customListPoint {
+        padding-left: 220px;
         display: block;
-        margin-bottom: 3px;
+        margin-bottom: 50px;
+        border: 2px solid rgb(50, 160, 240);
+        border-radius: 6px;
+        background-color: rgba(38, 56, 71, 0.769);
+        min-width: 700px;
+        width: 90%;
+        max-width: 1200px;
+        height: 214px;
     }
 
-    img {
+    .listpointImage {
         width: 30px;
         height: 30px;
-        margin: -5px 8px 0 0;
+        margin: -15px 8px 0 -35px;
         -webkit-animation: rotating 2s linear infinite;
     }
 }
@@ -25,4 +33,3 @@ ul {
         display: inline;
     }
 }
-

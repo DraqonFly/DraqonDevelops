@@ -27,7 +27,7 @@ class BoilerplateCorner extends Component {
                 </Paragraph>
 
                 <Headline size="3" class="listHeadline"> My Boilerplates </Headline>
-                <List isOrdered={false}>
+                <List isOrdered={false} listPoints={true}>
                     <li> Webpack Boilerplate 
                         <Paragraph class="description">
                             Informational text for this listpoint <br/>
