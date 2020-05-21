@@ -104,7 +104,7 @@ class App extends Component {
                     ]
                 }
             ]
-        };
+        }; 
     }
 
     updateActiveSection = (sectionID, selectionID) => {
@@ -166,7 +166,7 @@ class App extends Component {
                         })}
                         <Switch />
                     </Menu>
-                    <div class="footer">
+                    <div className="footer">
                         Footer
                     </div>
                 </PageRouter>

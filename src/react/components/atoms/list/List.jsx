@@ -13,7 +13,7 @@ class List extends Component
     applyListDots = () => {
         return [...this.props.children].map( (child, index) => {
             return this.props.listPoints?
-            <span key={index} className="listpoint"> <img class="listpointImage" width={25} src="/src/assets/svg/dot.svg"></img> {child} </span> : 
+            <span key={index} className="listpoint"> <img className="listpointImage" width={25} src="/src/assets/svg/dot.svg"></img> {child} </span> : 
             child.props.className === "preview"? <span key={index} className="customListPoint"> {child} </span> : <span key={index}> {child} </span>;
         })
     }

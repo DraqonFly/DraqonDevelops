@@ -27,6 +27,14 @@ class HomePage extends Component
                     Have fun exploring a developers multiverse.
                 </Paragraph>
 
+                <Headline size="3"> About this Website </Headline>
+                <Paragraph> 
+                    Find out more about how this website got created. <br/>
+                    This will especially cover the technologies used in this website. <br/>
+                    <Link> <ReactLink to ="about/AboutThisWebsite"> Click here to find out more. </ReactLink> </Link>
+                </Paragraph>
+
+
                 <Headline size="3"> Boilerplate Corner </Headline>
                 <Paragraph> 
                     Check out the Boilerplate Corner. <br/>
@@ -39,7 +47,6 @@ class HomePage extends Component
                 <Paragraph> 
                     Explore my public repositories. <br/>
                     In those repositories, my public projects stored and versioned. <br/>
-                    You can download and run them to take a closer look, just read the ReadMe file carefully. <br/>
                     <Link> <ReactLink to ="GitRepositories"> Click here to visit the Git Repositories. </ReactLink> </Link>
                 </Paragraph>
 

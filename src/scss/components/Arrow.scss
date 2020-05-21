@@ -1,0 +1,10 @@
+.arrow {
+    width: 30px;
+    height: 30px;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: 12px;
+}
+.arrow.up {
+    transform: rotateX(180deg);
+}
