@@ -18,6 +18,7 @@ class HomePage extends Component
         return(
             <Panel>
                 <Headline size="1"> DraqonDevelops.com </Headline>
+                <br/>
 
                 <Headline size="2"> Index Page </Headline>
                 <Paragraph> 

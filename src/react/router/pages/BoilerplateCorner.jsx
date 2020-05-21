@@ -18,6 +18,7 @@ class BoilerplateCorner extends Component {
         return (
             <Panel>
                 <Headline size="1"> DraqonDevelops.com </Headline>
+                <br/>
 
                 <Headline size="2"> Boilerplate Corner </Headline>
                 <Paragraph>

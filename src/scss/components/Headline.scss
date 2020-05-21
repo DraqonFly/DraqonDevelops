@@ -7,7 +7,8 @@
         display: flex;
         height: 56px;
         flex-direction: row-reverse;
-        margin-right: 12px;
+        margin-right: -10px;
+        margin-top: -20px;
         margin-bottom: -56px;
     }
 
@@ -18,7 +19,7 @@
 
     &.listHeadline {
         margin-bottom: 0px;
-        margin-left: 35px;
+        margin-left: 0;
     }
 
 }

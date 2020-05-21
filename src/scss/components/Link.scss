@@ -38,3 +38,16 @@ a {
         color: inherit;
     }
 }
+
+.inlineLink {
+    color: rgb(27, 172, 39);
+    text-decoration: underline;
+    height: inherit;
+    
+    a {
+        line-height: inherit;
+    }
+    &:hover {
+        color: rgb(32, 201, 46);
+    }
+}

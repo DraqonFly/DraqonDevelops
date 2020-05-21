@@ -9,7 +9,7 @@
     .customListPoint {
         padding-left: 220px;
         display: block;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
         border: 2px solid rgb(50, 160, 240);
         border-radius: 6px;
         background-color: rgba(6, 51, 65, 0.711);
@@ -34,14 +34,12 @@ ul {
 
 .preview {
     font-size: 20px;
-
     * {
         font-size: 17px;
         line-height: 19px;
-
-        
-
-
     }
-
 }    
+
+.listHeadline.last {
+    margin-bottom: 10px;
+}
