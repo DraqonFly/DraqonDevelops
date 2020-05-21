@@ -70,14 +70,6 @@ class App extends Component {
                             text: "Git Repositories",
                             highlighted: false,
                             link: "/GitRepositories"
-                        },
-                        {
-                            outerPos: 1,
-                            innerPos: 3,
-                            class: "mainnav__item --selectable",
-                            text: "DevelopmentD",
-                            highlighted: false,
-                            link: "none"
                         }
                     ]
                 },
@@ -97,9 +89,17 @@ class App extends Component {
                             outerPos: 2,
                             innerPos: 1,
                             class: "mainnav__item --selectable",
-                            text: "AboutB",
+                            text: "About Me",
                             highlighted: false,
-                            link: "none"
+                            link: "/about/AboutMe"
+                        },
+                        {
+                            outerPos: 2,
+                            innerPos: 1,
+                            class: "mainnav__item --selectable",
+                            text: "About this Website",
+                            highlighted: false,
+                            link: "/about/AboutThisWebsite"
                         }
                     ]
                 }
@@ -166,6 +166,9 @@ class App extends Component {
                         })}
                         <Switch />
                     </Menu>
+                    <div class="footer">
+                        Footer
+                    </div>
                 </PageRouter>
             </div>
         );

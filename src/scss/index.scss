@@ -16,6 +16,7 @@
 @import "./components/Menu.scss";
 @import "./components/MainNav.scss";
 @import "./components/Slider.scss";
+@import "./components/Footer.scss";
 
 * {
     color: get-color(primary);
@@ -25,4 +26,8 @@ body {
     background: rgb(241, 241, 241);
     color: rgb(42, 42, 42);
     transition: 1s;
+}
+
+.pageHeight {
+    min-height: 100vH;
 }
