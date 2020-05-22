@@ -18,36 +18,6 @@ class App extends Component {
                     class: "mainnav__inner",
                     menuItems: [
                         {
-                            outerPos: 0,
-                            innerPos: 0,
-                            class: "mainnav__item --caption",
-                            text: "General",
-                            highlighted: false,
-                            link: "none"
-                        },
-                        {
-                            outerPos: 0,
-                            innerPos: 1,
-                            class: "mainnav__item --selectable",
-                            text: "GeneralB",
-                            highlighted: false,
-                            link: "none"
-                        },
-                        {
-                            outerPos: 0,
-                            innerPos: 2,
-                            class: "mainnav__item --selectable",
-                            text: "GeneralC",
-                            highlighted: false,
-                            link: "none"
-                        }
-                    ]
-                },
-                {
-                    horizontal: false,
-                    class: "mainnav__inner",
-                    menuItems: [
-                        {
                             outerPos: 1,
                             innerPos: 0,
                             class: "mainnav__item --caption",
